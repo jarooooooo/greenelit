@@ -34,7 +34,7 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
   z-index: -5;
 }
 
@@ -50,14 +50,107 @@ body {
   font-size: 24px;
 }
 
+.img {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+  -webkit-transition: .8s;
+  transition: .8s;
+}
+
+.one {
+  background-image: url(../img/cards/bulb_socket.jpg);
+}
+
+.two {
+  background-image: url(../img/cards/bulb_socket.jpg);
+}
+
+.three {
+  background-image: url(../img/cards/bulb_socket.jpg);
+}
+
+.price-box {
+  margin: 20px 10px;
+  padding: 30px;
+  background-color: #fff;
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.price-box h3 {
+  color: #776f65;
+  text-transform: uppercase;
+}
+
+.price-box span {
+  font-weight: bold;
+}
+
+.price-box i {
+  font-size: 24px;
+  padding: 0 5px;
+}
+
+.price-box button {
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+.price-box .price-tag {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.price-box:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.price-info {
+  margin-top: 30px;
+}
+
+.price-info a {
+  text-decoration: none;
+}
+
+.underline {
+  margin: 0 auto 40px;
+  width: 160px;
+  height: 4px;
+  background-color: #27016e;
+}
+
 .contact {
   background-color: #776f65;
   color: #f2f2f2;
+  position: relative;
+  background-image: url("../img/slider/pv3_1200.jpg");
+  background-position: center;
+  background-size: cover;
+  color: #f2f2f2;
+  z-index: 0;
+}
+
+.contact .cotact-shadow {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -5;
 }
 
 .contact a {
   text-decoration: none;
-  color: #f2f2f2;
+  color: #fcf7f9;
   -webkit-transition: .3s;
   transition: .3s;
 }
@@ -67,7 +160,7 @@ body {
 }
 
 .contact a:hover {
-  color: #0039a6;
+  color: #af99a8;
 }
 
 .contact .contact-item h3 {
@@ -75,7 +168,7 @@ body {
 }
 
 .contact .contact-item .fa-circle {
-  color: #0039a6;
+  color: #27016e;
 }
 
 .contact .contact-item .social-media {

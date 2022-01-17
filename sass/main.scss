@@ -37,7 +37,7 @@ body {
         top: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, .7);
+        background-color: rgba(0, 0, 0, .8);
         z-index: -5;
     }
 
@@ -72,129 +72,103 @@ body {
 
 // .card {
 //     position: relative;
-//     margin: 20px 80px;
-//     width: 450px;
-//     height: 700px;
+//     // margin: 20px 80px;
+//     // width: 450px;
+//     // height: 300px;
 //     perspective: 800px;
 // }
 
-// .img {
-//     width: 100%;
-//     height: 100%;
-//     background-position: center;
-//     background-size: cover;
-//     border-radius: 15px;
-//     transition: .8s;
-// }
+.img {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    transition: .8s;
+}
 
-// .one {
-//     background-image: url(./img/forest-gcb7ad5f4f_1280.jpg);
-// }
+.one {
+    background-image: url(../img/cards/bulb_socket.jpg);
+}
 
-// .two {
-//     background-image: url(./img/valley-g546d3f9f5_1920.jpg);
-// }
+.two {
+    background-image: url(../img/cards/bulb_socket.jpg);
+}
 
-// .three {
-//     background-image: url(./img/namibia-g445a265ec_1920.jpg);
-// }
+.three {
+    background-image: url(../img/cards/bulb_socket.jpg);
+}
 
-// .text {
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     bottom: 0;
-//     right: 0;
-//     padding: 30px;
-//     border-radius: 15px;
-//     background-image: linear-gradient(315deg, #fee2f8 0%, #dcf8ef 74%);
-//     text-align: center;
-//     opacity: 0;
-//     transition: 0.8s;
-// }
+.price-box {
+    margin: 20px 10px;
+    padding: 30px;
+    background-color: $white;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .4);
+    transition: transform .3s;
 
-// h3 {
-//     margin-top: 450px;
-//     margin-bottom: 20px;
-// }
+    h3 {
+        color: $main-color;
+        text-transform: uppercase;
+    }
 
-// .text-one {
-//     transform: rotateX(-180deg);
-// }
+    span {
+        font-weight: bold;
+    }
 
-// .text-two {
-//     transform: rotateY(-180deg);
-// }
+    i {
+        font-size: 24px;
+        padding: 0 5px;
+    }
 
-// .card:hover .text {
-//     transform: rotate(0);
-//     opacity: 1;
-// }
+    button {
+        padding: 10px 20px;
+        text-transform: uppercase;
+    }
 
-// .card:hover .one {
-//     transform: rotateX(180deg);
-//     opacity: 0;
-// }
+    .price-tag {
+        font-size: 30px;
+        font-weight: bold;
+    }
+}
 
-// .card:hover .two {
-//     transform: rotateY(-180deg);
-//     opacity: 0;
-// }
+.price-box:hover {
+    transform: scale(1.1);
+}
 
-// .card:hover .three {
-//     animation: up .8s;
-// }
+.price-info {
+    margin-top: 30px;
 
-// .card:hover .text-three {
-//     animation: down .8s;
-// }
+    a {
+        text-decoration: none;
+    }
+}
 
-// @keyframes up {
-//     0% {
-//         transform: translateY(0);
-//         opacity: 1;
-//     }
-
-//     50% {
-//         transform: translateY(-60%);
-//     }
-
-//     80% {
-//         opacity: 1;
-//     }
-
-//     100% {
-
-//         opacity: 0;
-//     }
-
-// }
-
-// @keyframes down {
-
-//     0% {
-//         transform: translateY(0%);
-//         z-index: -1;
-//     }
-
-//     50% {
-//         transform: translateY(60%);
-//         z-index: -1;
-//     }
-
-//     100% {
-//         z-index: 1;
-//     }
-
-// }
-
-
-
+.underline {
+    margin: 0 auto 40px;
+    width: 160px;
+    height: 4px;
+    background-color: $underline-color;
+}
 
 
 .contact {
     background-color: $dark-gray;
     color: $light-gray;
+    position: relative;
+    background-image: url('../img/slider/pv3_1200.jpg');
+    background-position: center;
+    background-size: cover;
+    color: $light-gray;
+    z-index: 0;
+
+        .cotact-shadow {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, .8);
+            z-index: -5;
+        }
 
     a {
         span {
@@ -202,12 +176,12 @@ body {
         }
 
         text-decoration: none;
-        color: $light-gray;
+        color: $contact-links;
         transition: .3s;
     }
 
     a:hover {
-        color: $main-blue;
+        color: $contact-hover;
     }
 
     .contact-item {
@@ -218,7 +192,7 @@ body {
 
 
         .fa-circle {
-            color: $main-blue;
+            color: $contact-icon;
         }
 
         .social-media {
@@ -250,3 +224,5 @@ body {
         color: $dark-gray;
     }
 }
+
+
