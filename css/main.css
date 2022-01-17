@@ -7,6 +7,12 @@
   padding: 0;
 }
 
+body {
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  background-color: #ebecf2;
+}
+
 .underline {
   margin: 0 auto 40px;
   width: 60px;
@@ -16,7 +22,7 @@
 
 .aboutus-hero {
   position: relative;
-  background-image: url("../img/slider/pv2_1200.jpg");
+  background-image: url("../img/slider/pv3_1200.jpg");
   background-position: center;
   background-size: cover;
   color: #f2f2f2;
@@ -37,10 +43,53 @@
 }
 
 .aboutus-hero .aboutus-hero-item i {
-  font-size: 36px;
+  font-size: 48px;
 }
 
 .aboutus-hero .aboutus-hero-item .aboutus-hero-title {
   font-size: 24px;
+}
+
+.contact {
+  background-color: #776f65;
+  color: #f2f2f2;
+}
+
+.contact a {
+  text-decoration: none;
+  color: #f2f2f2;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.contact a span {
+  margin-bottom: 10px;
+}
+
+.contact a:hover {
+  color: #0039a6;
+}
+
+.contact .contact-item h3 {
+  text-transform: capitalize;
+}
+
+.contact .contact-item .fa-circle {
+  color: #0039a6;
+}
+
+.contact .contact-item .social-media {
+  padding-left: 50%;
+  -webkit-transform: translateX(-15%);
+          transform: translateX(-15%);
+  text-align: left;
+}
+
+.footer {
+  height: 75px;
+}
+
+.footer p {
+  color: #776f65;
 }
 /*# sourceMappingURL=main.css.map */
