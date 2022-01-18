@@ -16,12 +16,32 @@ body {
 }
 
 
-
 .underline {
     margin: 0 auto 40px;
-    width: 60px;
+    width: 160px;
     height: 4px;
-    background-color: $main-color;
+    background-color: $underline-color;
+}
+
+
+.top-carousel {
+
+    .carousel-item {
+        position: relative;
+        height: 480px;
+    }
+
+    .carousel-caption {
+        position: absolute;
+        left: 0;
+        right: 0;
+        padding: 20px 0;
+        background-color: rgba(0, 0, 0, .8);
+    }
+
+    .carousel-indicators {
+        padding-bottom: 10px;
+    }
 }
 
 .aboutus-hero {
@@ -56,50 +76,7 @@ body {
 }
 
 
-// // cards
-
-
-
-// body {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     height: 100vh;
-//     font-family: 'Ubuntu', sans-serif;
-//     background-color: #333;
-//     overflow: hidden;
-// }
-
-// .card {
-//     position: relative;
-//     // margin: 20px 80px;
-//     // width: 450px;
-//     // height: 300px;
-//     perspective: 800px;
-// }
-
-.img {
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    border-radius: 15px;
-    transition: .8s;
-}
-
-.one {
-    background-image: url(../img/cards/bulb_socket.jpg);
-}
-
-.two {
-    background-image: url(../img/cards/bulb_socket.jpg);
-}
-
-.three {
-    background-image: url(../img/cards/bulb_socket.jpg);
-}
-
-.price-box {
+.supplier-box {
     margin: 20px 10px;
     padding: 30px;
     background-color: $white;
@@ -125,50 +102,41 @@ body {
         text-transform: uppercase;
     }
 
-    .price-tag {
-        font-size: 30px;
-        font-weight: bold;
+    .supplier-brand {
+        height: 65px;
+
+        img {
+            max-height: 60px;
+            max-width: 175px;
+        }
     }
+
 }
 
-.price-box:hover {
+.supplier-box:hover {
     transform: scale(1.1);
 }
 
-.price-info {
-    margin-top: 30px;
-
-    a {
-        text-decoration: none;
-    }
-}
-
-.underline {
-    margin: 0 auto 40px;
-    width: 160px;
-    height: 4px;
-    background-color: $underline-color;
-}
 
 
 .contact {
     background-color: $dark-gray;
     color: $light-gray;
     position: relative;
-    background-image: url('../img/slider/pv3_1200.jpg');
+    background-image: url('../img/hero/network-4851079_1920.jpg');
     background-position: center;
     background-size: cover;
     color: $light-gray;
     z-index: 0;
 
-        .cotact-shadow {
-            position: absolute;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, .8);
-            z-index: -5;
-        }
+    .cotact-shadow {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .7);
+        z-index: -5;
+    }
 
     a {
         span {
@@ -224,5 +192,3 @@ body {
         color: $dark-gray;
     }
 }
-
-
