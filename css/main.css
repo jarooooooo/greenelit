@@ -22,7 +22,7 @@ body {
 
 .top-carousel .carousel-item {
   position: relative;
-  height: 480px;
+  max-height: 480px;
 }
 
 .top-carousel .carousel-caption {
@@ -30,7 +30,7 @@ body {
   left: 0;
   right: 0;
   padding: 20px 0;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .top-carousel .carousel-indicators {

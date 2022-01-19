@@ -28,7 +28,7 @@ body {
 
     .carousel-item {
         position: relative;
-        height: 480px;
+        max-height: 480px;
     }
 
     .carousel-caption {
